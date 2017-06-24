@@ -1,4 +1,4 @@
-package com.nullvoid.blooddonation;
+package com.TheProgrammingShinigami.blooddonation;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -22,7 +22,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.nullvoid.blooddonation.beans.User;
+import com.TheProgrammingShinigami.blooddonation.beans.User;
 
 import static android.widget.Toast.makeText;
 

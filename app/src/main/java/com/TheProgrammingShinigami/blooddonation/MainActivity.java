@@ -1,4 +1,4 @@
-package com.nullvoid.blooddonation;
+package com.TheProgrammingShinigami.blooddonation;
 
 import android.content.Intent;
 import android.os.Bundle;

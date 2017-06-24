@@ -1,4 +1,4 @@
-package com.nullvoid.blooddonation;
+package com.TheProgrammingShinigami.blooddonation;
 
 import org.junit.Test;
 

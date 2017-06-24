@@ -1,4 +1,4 @@
-package com.nullvoid.blooddonation;
+package com.TheProgrammingShinigami.blooddonation;
 
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
@@ -25,7 +25,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
-import com.nullvoid.blooddonation.beans.Donee;
+import com.TheProgrammingShinigami.blooddonation.beans.Donee;
 
 import java.util.Calendar;
 

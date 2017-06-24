@@ -1,4 +1,4 @@
-package com.nullvoid.blooddonation.beans;
+package com.TheProgrammingShinigami.blooddonation.beans;
 
 import org.parceler.Parcel;
 

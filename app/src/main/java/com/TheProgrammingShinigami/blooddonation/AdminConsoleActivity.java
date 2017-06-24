@@ -1,12 +1,11 @@
-package com.nullvoid.blooddonation;
-
+package com.TheProgrammingShinigami.blooddonation;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import com.nullvoid.blooddonation.adapters.AdminPagerAdapter;
+import com.TheProgrammingShinigami.blooddonation.adapters.AdminPagerAdapter;
 
 /**
  * Created by Narayanan on 24/06/17.

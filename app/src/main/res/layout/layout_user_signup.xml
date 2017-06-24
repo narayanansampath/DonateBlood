@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:textAlignment="center"
     android:parentActivityName=".LoginActivity"
-    tools:context="com.nullvoid.blooddonation.LoginActivity">
+    tools:context="com.TheProgrammingShinigami.blooddonation.LoginActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"

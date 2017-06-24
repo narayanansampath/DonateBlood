@@ -1,4 +1,4 @@
-package com.nullvoid.blooddonation.adapters;
+package com.TheProgrammingShinigami.blooddonation.adapters;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
@@ -8,9 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
-import com.nullvoid.blooddonation.DoneeListFragment;
-import com.nullvoid.blooddonation.DonorListFragment;
-import com.nullvoid.blooddonation.R;
+import com.TheProgrammingShinigami.blooddonation.DoneeListFragment;
+import com.TheProgrammingShinigami.blooddonation.DonorListFragment;
+import com.TheProgrammingShinigami.blooddonation.R;
 
 /**
  * Created by sanath on 15/06/17.

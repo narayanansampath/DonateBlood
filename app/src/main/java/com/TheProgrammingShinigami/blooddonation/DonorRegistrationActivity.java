@@ -1,4 +1,4 @@
-package com.nullvoid.blooddonation;
+package com.TheProgrammingShinigami.blooddonation;
 
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
@@ -32,8 +32,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.nullvoid.blooddonation.beans.Donor;
-import com.nullvoid.blooddonation.beans.User;
+import com.TheProgrammingShinigami.blooddonation.beans.Donor;
+import com.TheProgrammingShinigami.blooddonation.beans.User;
 
 import java.util.Calendar;
 

@@ -1,4 +1,4 @@
-package com.nullvoid.blooddonation.adapters;
+package com.TheProgrammingShinigami.blooddonation.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,8 +13,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.nullvoid.blooddonation.R;
-import com.nullvoid.blooddonation.beans.SelectionDonor;
+import com.TheProgrammingShinigami.blooddonation.R;
+import com.TheProgrammingShinigami.blooddonation.beans.SelectionDonor;
 
 import org.parceler.Parcels;
 

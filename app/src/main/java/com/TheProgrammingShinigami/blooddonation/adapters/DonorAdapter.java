@@ -1,4 +1,4 @@
-package com.nullvoid.blooddonation.adapters;
+package com.TheProgrammingShinigami.blooddonation.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -10,8 +10,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.nullvoid.blooddonation.R;
-import com.nullvoid.blooddonation.beans.Donor;
+import com.TheProgrammingShinigami.blooddonation.R;
+import com.TheProgrammingShinigami.blooddonation.beans.Donor;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.nullvoid.blooddonation;
+package com.TheProgrammingShinigami.blooddonation;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -10,15 +10,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.nullvoid.blooddonation.adapters.DonorAdapter;
-import com.nullvoid.blooddonation.beans.Donor;
+import com.TheProgrammingShinigami.blooddonation.adapters.DoneeAdapter;
+import com.TheProgrammingShinigami.blooddonation.beans.Donee;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,37 +25,42 @@ import java.util.List;
  * Created by Narayanan on 24/06/17.
  */
 
-public class DonorListFragment extends Fragment {
+public class DoneeListFragment extends Fragment {
 
     RecyclerView recyclerView;
     LinearLayoutManager llm;
+
     ProgressDialog progressDialog;
 
-    FirebaseAuth mAuth;
-    FirebaseUser fbUser;
-    DatabaseReference db;
+    DatabaseReference dbRef;
+    List<Donee> donees;
 
-    List<Donor> donors;
-    DonorAdapter donorAdapter;
+    public DoneeListFragment() {
+    }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        donors = new ArrayList<Donor>();
+        progressDialog = new ProgressDialog(getActivity());
+        progressDialog.setTitle("Loading");
+        progressDialog.setMessage("Retriving Data");
+        progressDialog.setCanceledOnTouchOutside(false);
+        progressDialog.show();
 
-        db = FirebaseDatabase.getInstance().getReference("donors");
-        db.addListenerForSingleValueEvent(new ValueEventListener() {
+        donees = new ArrayList<Donee>();
+
+        dbRef = FirebaseDatabase.getInstance().getReference("donee");
+        dbRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                    Donor donor = postSnapshot.getValue(Donor.class);
-                    donors.add(donor);
+                    Donee donee = postSnapshot.getValue(Donee.class);
+                    donees.add(donee);
                 }
-                donorAdapter = new DonorAdapter(donors, getActivity());
                 setView();
+                progressDialog.dismiss();
             }
-
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 progressDialog.dismiss();
@@ -66,7 +69,8 @@ public class DonorListFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.layout_list_view, container, false);
 
@@ -80,8 +84,8 @@ public class DonorListFragment extends Fragment {
     }
 
     public void setView(){
-        DonorAdapter donorAdapter = new DonorAdapter(donors, getActivity());
-        recyclerView.setAdapter(donorAdapter);
+        DoneeAdapter doneeAdapter = new DoneeAdapter(donees, getActivity());
+        recyclerView.setAdapter(doneeAdapter);
     }
 
 }

@@ -1,4 +1,4 @@
-package com.nullvoid.blooddonation.adapters;
+package com.TheProgrammingShinigami.blooddonation.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,9 +10,9 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.nullvoid.blooddonation.DonorSelectionActivity;
-import com.nullvoid.blooddonation.R;
-import com.nullvoid.blooddonation.beans.Donee;
+import com.TheProgrammingShinigami.blooddonation.DonorSelectionActivity;
+import com.TheProgrammingShinigami.blooddonation.R;
+import com.TheProgrammingShinigami.blooddonation.beans.Donee;
 
 import java.util.List;
 

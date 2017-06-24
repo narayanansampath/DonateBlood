@@ -1,4 +1,4 @@
-package com.nullvoid.blooddonation.beans;
+package com.TheProgrammingShinigami.blooddonation.beans;
 
 /**
  * Created by sanath on 11/06/17.

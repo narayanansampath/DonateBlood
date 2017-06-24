@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nullvoid.blooddonation">
+    package="com.TheProgrammingShinigami.blooddonation">
 
     <application
         android:allowBackup="true"
@@ -12,38 +12,38 @@
 
         <uses-sdk android:minSdkVersion="11"/>
 
-        <activity android:name=".MainActivity"
+        <activity android:name="com.TheProgrammingShinigami.blooddonation.MainActivity"
             android:theme="@style/AppThemeNoActionBar"/>
 
         <activity
-            android:name=".LoginActivity">
+            android:name="com.TheProgrammingShinigami.blooddonation.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".UserSignupActivity"
+            android:name="com.TheProgrammingShinigami.blooddonation.UserSignupActivity"
             android:theme="@style/AppThemeNoActionBar"
             android:label="Sign Up" />
         <activity
-            android:name=".DoneeRequestActivity"
+            android:name="com.TheProgrammingShinigami.blooddonation.DoneeRequestActivity"
             android:theme="@style/AppThemeNoActionBar"
             android:label="Request Blood" />
         <activity
-            android:name=".DonorRegistrationActivity"
+            android:name="com.TheProgrammingShinigami.blooddonation.DonorRegistrationActivity"
             android:theme="@style/AppThemeNoActionBar"
             android:label="Donate Blood" />
         <activity
-            android:name=".DonorListFragment"
+            android:name="com.TheProgrammingShinigami.blooddonation.DonorListFragment"
             android:label="Donors"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".AdminConsoleActivity"
+            android:name="com.TheProgrammingShinigami.blooddonation.AdminConsoleActivity"
             android:theme="@style/AppThemeNoActionBar"
             android:label="Console" />
 
-        <activity android:name=".DonorSelectionActivity"
+        <activity android:name="com.TheProgrammingShinigami.blooddonation.DonorSelectionActivity"
             android:label="Select a Donor" />
     </application>
 
